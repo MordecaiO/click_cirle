@@ -1,7 +1,10 @@
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  const handlePlaceCircle = (e) => {
+    console.log("you just clicked");
+  };
+  return <div className="App" onClick={handlePlaceCircle}></div>;
 }
 
 export default App;
