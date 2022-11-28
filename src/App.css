@@ -5,4 +5,13 @@ height: 100vh;
 
 .point {
     position: absolute; 
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: green;
+    z-index: -1;
+}
+
+.undo {
+    z-index: 5;
 }
