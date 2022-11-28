@@ -17,7 +17,19 @@ function App() {
     ]);
   };
 
-  return <div className="App" onClick={handlePlaceCircle}></div>;
+  return (
+    <div className="App" onClick={handlePlaceCircle}>
+      {points.map((point) => {
+        return (
+          <div
+            className="point"
+            style={{ top: point.y + "px", left: point.x + "px" }}
+          >
+            x
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-
 export default App;
